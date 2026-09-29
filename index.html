@@ -1,0 +1,3355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f59e0b">
+  <meta name="description" content="Official portfolio of Gautam Rulyan — National Top 0.05% Mathematics & Science Scholar (SASMO World #8, AIR 2), Founder & Director of Aspire Olympiad, and ML Researcher advancing AI clinical decision triage.">
+  <meta name="keywords" content="Gautam Rulyan, Aspire Olympiad, SASMO World 8, AMC 10, AMC 12, AIME, IOQM, RMO, INMO, AI Medical Triage, Machine Learning Researcher, Mathematics Olympiad">
+  <meta name="author" content="Gautam Rulyan">
+  <meta name="robots" content="index, follow">
+  <title>Gautam Rulyan — Olympiad Scholar, Researcher & Founder of Aspire Olympiad</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://gautamrulyan.com/">
+
+  <!-- Favicon (Celestial Astrolabe Vector) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23070f26' stroke='%23f59e0b' stroke-width='2'/%3E%3Cpath d='M16 4 L18.5 13.5 L28 16 L18.5 18.5 L16 28 L13.5 18.5 L4 16 L13.5 13.5 Z' fill='%23fbbf24'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%2300f5ff'/%3E%3C/svg%3E">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gautamrulyan.com/">
+  <meta property="og:title" content="Gautam Rulyan — Olympiad Scholar, Researcher & Founder of Aspire Olympiad">
+  <meta property="og:description" content="National Top 0.05% Mathematics & Science Scholar (SASMO World #8, AIR 2), Founder & Director of Aspire Olympiad (400+ scholars mentored), and Machine Learning Researcher.">
+  <meta property="og:image" content="assets/techfest_aetherial_bg.jpg">
+  <meta property="og:site_name" content="Gautam Rulyan Academic & Research Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gautam Rulyan — Olympiad Scholar & Researcher">
+  <meta name="twitter:description" content="National Top 0.05% Mathematics & Science Scholar (SASMO World #8, AIR 2), Founder of Aspire Olympiad, and ML Researcher.">
+  <meta name="twitter:image" content="assets/techfest_aetherial_bg.jpg">
+
+  <!-- Preconnect to CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Typography Fonts: Cinzel Decorative, Space Grotesk, JetBrains Mono, Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cinzel+Decorative:wght@700;900&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Three.js (Local with CDN fallback) -->
+  <script src="vendor/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+    }
+  </script>
+
+  <style>
+/* ==========================================================================
+   TECHFEST IIT BOMBAY // "AN AETHERIAL RENAISSANCE" OFFICIAL REPLICA THEME
+   Immersive Scroll Cloud Parallax, 3D Celestial WebGL, and Festival Architecture
+   ========================================================================== */
+
+:root {
+  --tf-gold: #f59e0b;
+  --tf-gold-bright: #fbbf24;
+  --tf-gold-glow: rgba(245, 158, 11, 0.45);
+  --tf-aether-cyan: #00f5ff;
+  --tf-aether-blue: #38bdf8;
+  --tf-aether-glow: rgba(0, 245, 255, 0.45);
+  --tf-sky-deep: #030712;
+  --tf-sky-mid: #0b152d;
+  --tf-sky-sunset: #15102a;
+  
+  --tf-surface: rgba(11, 21, 45, 0.78);
+  --tf-surface-hover: rgba(19, 34, 72, 0.92);
+  --tf-card-border: rgba(245, 158, 11, 0.28);
+  --tf-border-subtle: rgba(255, 255, 255, 0.1);
+
+  --tf-text: #f8fafc;
+  --tf-text-secondary: #cbd5e1;
+  --tf-text-muted: #94a3b8;
+
+  --font-tf-title: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-serif: 'Cinzel', serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --glass-bg: rgba(7, 15, 38, 0.82);
+  --glass-border: 1.5px solid rgba(245, 158, 11, 0.32);
+  --glass-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(245, 158, 11, 0.14);
+
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--tf-sky-deep);
+  color: var(--tf-text);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--tf-sky-deep);
+  color: var(--tf-text);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--tf-sky-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--tf-gold), var(--tf-aether-cyan));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tf-gold-bright);
+  box-shadow: 0 0 14px var(--tf-gold);
+}
+
+/* ==========================================================================
+   DYNAMIC INTERACTIVE GAME CURSOR
+   ========================================================================== */
+
+#tf-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.cursor-diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--tf-gold-bright);
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0 0 12px var(--tf-gold), 0 0 24px var(--tf-gold);
+}
+
+.cursor-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--tf-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 16px var(--tf-gold-glow);
+  transition: transform 0.2s var(--ease-smooth), border-color 0.25s ease;
+}
+
+#tf-cursor.hovering .cursor-ring {
+  transform: scale(1.6) rotate(45deg);
+  border-color: var(--tf-aether-cyan);
+  box-shadow: 0 0 25px var(--tf-aether-glow);
+}
+
+@media (pointer: coarse) {
+  #tf-cursor { display: none !important; }
+}
+
+/* ==========================================================================
+   TECHFEST CLOUD SCROLL PARALLAX SYSTEM ("THAT CLOUD THING")
+   ========================================================================== */
+
+/* Three.js WebGL Volumetric Cloud Skybox */
+#bg-cloud-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Atmospheric Citadel Panoramic Backdrop */
+.sky-citadel-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 50% 25%, rgba(245, 158, 11, 0.18) 0%, transparent 65%),
+    url('assets/techfest_game_citadel.jpg');
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  opacity: 0.42;
+  mix-blend-mode: screen;
+  filter: contrast(1.15) brightness(0.95);
+  transition: transform 0.08s linear;
+  will-change: transform;
+}
+
+/* Atmospheric Sunbeams & Vignette */
+.sky-sunbeams-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  background: 
+    radial-gradient(ellipse 95% 75% at 20% 15%, rgba(251, 191, 36, 0.2) 0%, transparent 60%),
+    linear-gradient(180deg, transparent 55%, rgba(3, 7, 18, 0.96) 100%);
+}
+
+/* SCROLL CLOUD PARTING DECKS (Left & Right Volumetric Banks) */
+.cloud-deck-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cloud-bank-left, .cloud-bank-right {
+  position: absolute;
+  top: -15vh;
+  width: 80vw;
+  height: 135vh;
+  background-image: url('assets/techfest_clouds_layer.jpg');
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  opacity: 0.62;
+  filter: contrast(1.25) brightness(0.95);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.cloud-bank-left {
+  left: -38vw;
+  transform: translateX(0);
+  mask-image: radial-gradient(ellipse 60% 80% at 20% 50%, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 80% at 20% 50%, black 20%, transparent 80%);
+}
+
+.cloud-bank-right {
+  right: -38vw;
+  transform: translateX(0) scaleX(-1);
+  mask-image: radial-gradient(ellipse 60% 80% at 20% 50%, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 80% at 20% 50%, black 20%, transparent 80%);
+}
+
+/* Drifting Foreground Mist Ribbon */
+.drifting-mist-ribbon {
+  position: fixed;
+  bottom: 0;
+  left: -50vw;
+  width: 200vw;
+  height: 380px;
+  background: url('assets/techfest_clouds_layer.jpg') repeat-x center bottom;
+  background-size: 1200px 380px;
+  mix-blend-mode: screen;
+  opacity: 0.32;
+  z-index: 4;
+  pointer-events: none;
+  animation: driftMist 50s linear infinite;
+}
+
+@keyframes driftMist {
+  from { transform: translateX(0); }
+  to { transform: translateX(50vw); }
+}
+
+/* Inter-Section Volumetric Cloud Gate */
+.cloud-transition-gate {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin: -90px 0;
+  z-index: 25;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 100% at 50% 50%, rgba(254, 243, 199, 0.18) 0%, transparent 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-gate-badge {
+  font-family: var(--font-tf-title);
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  color: var(--tf-gold-bright);
+  padding: 0.5rem 1.6rem;
+  border-radius: 30px;
+  background: rgba(7, 15, 38, 0.9);
+  border: 1px solid var(--tf-card-border);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.35);
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   TECHFEST TOP HUD & ANNOUNCEMENT BAR
+   ========================================================================== */
+
+.techfest-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.tf-ticker {
+  background: rgba(3, 7, 18, 0.92);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 0.32rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--tf-text-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+
+.tf-ticker-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tf-live-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--tf-aether-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--tf-aether-cyan);
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.5; }
+}
+
+.tf-ticker-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--tf-gold-bright);
+}
+
+/* Main Techfest Navigation Header */
+.techfest-nav-wrap {
+  background: rgba(7, 15, 38, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 0.65rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.techfest-nav-wrap.scrolled {
+  background: rgba(7, 15, 38, 0.95);
+  padding: 0.5rem 1.75rem;
+  border-bottom-color: var(--tf-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.tf-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.tf-logo-icon {
+  width: 42px;
+  height: 42px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tf-logo-icon svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 8px var(--tf-gold));
+}
+
+.tf-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.tf-brand-title {
+  font-family: var(--font-tf-title);
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.25;
+  padding-top: 1px;
+  display: block;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #ffffff 20%, var(--tf-gold-bright) 70%, var(--tf-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
+}
+
+.tf-brand-sub {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  line-height: 1.2;
+  color: var(--tf-aether-cyan);
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: block;
+}
+
+.tf-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 1;
+}
+
+.tf-nav-item a {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: var(--tf-text-secondary);
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  padding: 0.35rem 0.15rem;
+  transition: color 0.25s ease;
+}
+
+.tf-nav-item a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--tf-gold), var(--tf-aether-cyan));
+  box-shadow: 0 0 8px var(--tf-gold);
+  transition: width 0.3s var(--ease-smooth);
+}
+
+.tf-nav-item a:hover {
+  color: #ffffff;
+}
+
+.tf-nav-item a:hover::after {
+  width: 100%;
+}
+
+.tf-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.btn-tf-sound {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--tf-card-border);
+  background: rgba(11, 21, 45, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tf-text-secondary);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.btn-tf-sound:hover, .btn-tf-sound.active {
+  border-color: var(--tf-gold-bright);
+  color: var(--tf-gold-bright);
+  box-shadow: 0 0 15px var(--tf-gold-glow);
+}
+
+.btn-tf-part-clouds {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  padding: 0.42rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--tf-aether-cyan);
+  background: rgba(0, 245, 255, 0.08);
+  color: var(--tf-aether-cyan);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-tf-part-clouds:hover {
+  background: rgba(0, 245, 255, 0.22);
+  box-shadow: 0 0 16px var(--tf-aether-glow);
+  transform: translateY(-1px);
+}
+
+.btn-tf-cta {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.48rem 1.15rem;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--tf-gold) 0%, var(--tf-gold-bright) 100%);
+  color: #030712;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.4);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.btn-tf-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.65);
+  background: linear-gradient(135deg, #ffffff 0%, var(--tf-gold-bright) 100%);
+}
+
+.mobile-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--tf-gold);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1360px) {
+  .techfest-nav-wrap {
+    padding: 0.6rem 1.25rem;
+    gap: 0.75rem;
+  }
+  .tf-nav-links {
+    gap: 0.65rem;
+  }
+  .tf-nav-item a {
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+  }
+  .btn-tf-part-clouds span {
+    display: none;
+  }
+  .btn-tf-part-clouds {
+    padding: 0.42rem 0.55rem;
+  }
+  .btn-tf-cta {
+    padding: 0.45rem 0.95rem;
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .tf-ticker { display: none; }
+  .tf-nav-links { display: none; }
+  .mobile-toggle { display: flex; }
+  .techfest-nav-wrap { padding: 0.75rem 1.25rem; }
+  
+  .tf-nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(3, 7, 18, 0.98);
+    padding: 2rem 1.5rem;
+    border-bottom: 2px solid var(--tf-gold);
+    gap: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   HERO REALM: AN AETHERIAL RENAISSANCE
+   ========================================================================== */
+
+.tf-hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 2.5rem 5rem 2.5rem;
+  z-index: 10;
+}
+
+.tf-hero-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.tf-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid var(--tf-card-border);
+  padding: 0.45rem 1.2rem;
+  border-radius: 30px;
+  margin-bottom: 1.4rem;
+}
+
+.tf-hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--tf-gold-bright);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--tf-gold);
+}
+
+.tf-hero-badge-text {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--tf-gold-bright);
+  text-transform: uppercase;
+}
+
+.tf-hero-title {
+  font-family: var(--font-tf-title);
+  font-size: 3.8rem;
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.tf-hero-title .glow-gold {
+  background: linear-gradient(135deg, #ffffff 10%, var(--tf-gold-bright) 60%, var(--tf-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.5));
+}
+
+.tf-hero-title .glow-cyan {
+  display: block;
+  font-size: 2.1rem;
+  color: var(--tf-aether-cyan);
+  text-shadow: 0 0 20px var(--tf-aether-glow);
+  font-family: var(--font-display);
+  letter-spacing: 0.12em;
+  margin-top: 0.4rem;
+}
+
+.tf-hero-description {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 2.2rem;
+  max-width: 660px;
+  background: rgba(7, 15, 38, 0.75);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-left: 4px solid var(--tf-gold-bright);
+  padding: 1.2rem 1.6rem;
+  border-radius: 12px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.tf-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btn-hero-primary {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--tf-gold) 0%, var(--tf-gold-bright) 100%);
+  color: #030712;
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(245, 158, 11, 0.7);
+  background: linear-gradient(135deg, #ffffff 0%, var(--tf-gold-bright) 100%);
+}
+
+.btn-hero-ghost {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--tf-card-border);
+  background: rgba(11, 21, 45, 0.6);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.btn-hero-ghost:hover {
+  border-color: var(--tf-aether-cyan);
+  color: var(--tf-aether-cyan);
+  box-shadow: 0 0 25px var(--tf-aether-glow);
+  transform: translateY(-3px);
+}
+
+/* Stat Grid */
+.tf-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 660px;
+}
+
+.tf-stat-card {
+  background: var(--tf-surface);
+  border: 1px solid var(--tf-card-border);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.tf-stat-card:hover {
+  border-color: var(--tf-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+.tf-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--tf-gold-bright);
+  line-height: 1.1;
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.tf-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--tf-text-muted);
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+/* 3D Astrolabe Canvas Wrapper */
+.tf-hero-3d-wrap {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas-hero-3d {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+#canvas-hero-3d:active {
+  cursor: grabbing;
+}
+
+.tf-3d-rings-indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(7, 15, 38, 0.85);
+  border: 1px solid var(--tf-card-border);
+  padding: 0.35rem 1.1rem;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--tf-text-secondary);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .tf-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .tf-hero-title { font-size: 2.8rem; }
+  .tf-hero-title .glow-cyan { font-size: 1.6rem; }
+  .tf-hero-description { margin: 0 auto 2rem auto; }
+  .tf-hero-actions { justify-content: center; }
+  .tf-stat-strip { margin: 0 auto; grid-template-columns: repeat(2, 1fr); }
+  .tf-hero-3d-wrap { height: 380px; }
+}
+
+/* ==========================================================================
+   GLOBAL SECTION ARCHITECTURE
+   ========================================================================== */
+
+.tf-realm-section {
+  position: relative;
+  padding: 7rem 2.5rem;
+  z-index: 10;
+}
+
+.tf-section-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 4.5rem auto;
+}
+
+.tf-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--tf-gold-bright);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid var(--tf-card-border);
+}
+
+.tf-section-title {
+  font-family: var(--font-tf-title);
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.tf-section-title span {
+  color: var(--tf-gold-bright);
+  text-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+}
+
+.tf-section-desc {
+  font-size: 1.05rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   REALM II: COMPETITIONS & TROPHIES
+   ========================================================================== */
+
+.tf-trophy-grid {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.tf-trophy-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 12px;
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  transition: all 0.35s var(--ease-smooth);
+}
+
+.tf-trophy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--tf-gold), var(--tf-aether-cyan));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tf-trophy-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--tf-gold-bright);
+  background: var(--tf-surface-hover);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.25);
+}
+
+.tf-trophy-card:hover::before {
+  opacity: 1;
+}
+
+.tf-trophy-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+}
+
+.tf-trophy-rank {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid var(--tf-gold);
+  color: var(--tf-gold-bright);
+  text-transform: uppercase;
+}
+
+.tf-trophy-category {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--tf-aether-cyan);
+  text-transform: uppercase;
+}
+
+.tf-trophy-name {
+  font-family: var(--font-tf-title);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.tf-trophy-detail {
+  font-size: 0.95rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.tf-trophy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tf-trophy-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--tf-border-subtle);
+  color: var(--tf-text-muted);
+}
+
+@media (max-width: 1024px) {
+  .tf-trophy-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .tf-trophy-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   REALM III: WORKSHOPS & ASPIRE OLYMPIAD
+   ========================================================================== */
+
+.tf-workshop-wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.tf-workshop-lead-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 16px;
+  padding: 3rem;
+  backdrop-filter: blur(16px);
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.tf-ws-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--tf-gold-bright);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid var(--tf-card-border);
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+}
+
+.tf-ws-title {
+  font-family: var(--font-tf-title);
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+
+.tf-ws-desc {
+  font-size: 1.05rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.tf-ws-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.tf-ws-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.tf-ws-feature-dot {
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  background: var(--tf-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--tf-gold);
+  flex-shrink: 0;
+}
+
+.tf-ws-feature-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.tf-ws-feature-text span {
+  font-size: 0.82rem;
+  color: var(--tf-text-muted);
+}
+
+/* 3D Synaptic Web Canvas */
+.tf-synaptic-wrap {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  background: rgba(3, 7, 18, 0.6);
+  border: 1px solid var(--tf-border-subtle);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#canvas-synaptic-3d {
+  width: 100%;
+  height: 100%;
+}
+
+.tf-synaptic-label {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(7, 15, 38, 0.85);
+  border: 1px solid var(--tf-card-border);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--tf-gold-bright);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Pipeline Audit Card */
+.tf-pipeline-audit-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 16px;
+  padding: 2.2rem;
+  backdrop-filter: blur(16px);
+  margin-bottom: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.tf-audit-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--tf-border-subtle);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tf-audit-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tf-audit-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+}
+
+.tf-audit-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.tf-audit-stat-box {
+  background: rgba(3, 7, 18, 0.55);
+  border: 1px solid var(--tf-border-subtle);
+  border-radius: 12px;
+  padding: 1.8rem 1.4rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tf-audit-stat-box:hover {
+  transform: translateY(-4px);
+  border-color: var(--tf-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.tf-audit-big-num {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.tf-audit-big-num.num-cyan {
+  color: #00f5ff;
+  text-shadow: 0 0 25px rgba(0, 245, 255, 0.5);
+}
+
+.tf-audit-big-num.num-purple {
+  color: #818cf8;
+  text-shadow: 0 0 25px rgba(129, 140, 248, 0.5);
+}
+
+.tf-audit-big-num.num-pink {
+  color: #fb7185;
+  text-shadow: 0 0 25px rgba(251, 113, 133, 0.5);
+}
+
+.tf-audit-stat-label {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.tf-audit-stat-sub {
+  font-size: 0.82rem;
+  color: var(--tf-text-muted);
+  line-height: 1.5;
+}
+
+/* Result Cycle Switcher Tabs */
+.tf-cohort-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-cohort-tab {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  border: 1.5px solid var(--tf-card-border);
+  background: rgba(11, 21, 45, 0.6);
+  color: var(--tf-text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cohort-tab.active {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.9), rgba(99, 102, 241, 0.8));
+  border-color: #818cf8;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
+}
+
+.tab-dot-cyan {
+  width: 7px;
+  height: 7px;
+  background: #00f5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00f5ff;
+}
+
+.tab-dot-amber {
+  width: 7px;
+  height: 7px;
+  background: #fbbf24;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fbbf24;
+}
+
+/* Result Cycle Cards */
+.tf-result-grid {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.tf-result-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tf-result-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tf-cycle-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 14px;
+  padding: 2.2rem;
+  backdrop-filter: blur(14px);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tf-cycle-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--tf-gold-bright);
+  background: var(--tf-surface-hover);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.2);
+}
+
+.tf-cycle-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.tf-cycle-meta.meta-cyan { color: #00f5ff; }
+.tf-cycle-meta.meta-purple { color: #c084fc; }
+.tf-cycle-meta.meta-amber { color: #fbbf24; }
+
+.tf-cycle-num {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.tf-cycle-num .num-denom {
+  font-size: 1.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.tf-cycle-title {
+  font-family: var(--font-tf-title);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+}
+
+.tf-cycle-desc {
+  font-size: 0.94rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.6rem;
+  flex-grow: 1;
+}
+
+.tf-cycle-bar-wrap {
+  margin-top: auto;
+}
+
+.tf-cycle-bar-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.tf-cycle-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.fill-cyan {
+  background: linear-gradient(90deg, #00f5ff, #38bdf8);
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+.fill-purple {
+  background: linear-gradient(90deg, #ec4899, #a855f7);
+  box-shadow: 0 0 10px #ec4899;
+}
+
+.fill-amber {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  box-shadow: 0 0 10px #f59e0b;
+}
+
+.fill-indigo {
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  box-shadow: 0 0 10px #6366f1;
+}
+
+.tf-cycle-ratio-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .tf-workshop-lead-card { grid-template-columns: 1fr; padding: 2rem; }
+  .tf-audit-stats { grid-template-columns: 1fr; }
+  .tf-result-grid-2, .tf-result-grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   REALM IV: EXHIBITIONS & INNOVATIONS
+   ========================================================================== */
+
+.tf-exhibition-grid {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.tf-expo-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s var(--ease-smooth);
+}
+
+.tf-expo-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--tf-gold-bright);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.85), 0 0 35px rgba(245, 158, 11, 0.25);
+}
+
+.tf-expo-preview {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: rgba(3, 7, 18, 0.8);
+  overflow: hidden;
+}
+
+.tf-expo-preview canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.tf-expo-status-chip {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(7, 15, 38, 0.85);
+  border: 1px solid var(--tf-aether-cyan);
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--tf-aether-cyan);
+}
+
+.tf-expo-body {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tf-expo-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--tf-gold-bright);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.tf-expo-title {
+  font-family: var(--font-tf-title);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.95rem;
+}
+
+.tf-expo-desc {
+  font-size: 0.98rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.tf-expo-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.tf-expo-spec {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid var(--tf-card-border);
+  color: var(--tf-gold-bright);
+}
+
+.btn-expo-launch {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.8rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--tf-gold) 0%, var(--tf-gold-bright) 100%);
+  color: #030712;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.25s ease;
+}
+
+.btn-expo-launch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6);
+  background: linear-gradient(135deg, #ffffff 0%, var(--tf-gold-bright) 100%);
+}
+
+@media (max-width: 1024px) {
+  .tf-exhibition-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   REALM V: LECTURES & RESEARCH PAPERS
+   ========================================================================== */
+
+.tf-research-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.tf-paper-card {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 14px;
+  padding: 2.2rem 2.4rem;
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.tf-paper-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--tf-gold-bright);
+  background: var(--tf-surface-hover);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.2);
+}
+
+.tf-paper-top-tags {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.tag-gold { color: #f59e0b; }
+.tag-cyan { color: #00f5ff; }
+.tag-pink { color: #ec4899; }
+.tag-purple { color: #818cf8; }
+
+.tf-paper-title {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.tf-paper-desc {
+  font-size: 0.98rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.7;
+}
+
+.tf-paper-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--tf-border-subtle);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tf-paper-action {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+.tf-paper-action.action-amber {
+  color: #fbbf24;
+}
+
+.tf-paper-action.action-cyan {
+  color: #00f5ff;
+}
+
+.tf-paper-action.action-cyan:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00f5ff;
+}
+
+.tf-paper-doc-id {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--tf-text-muted);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .tf-paper-card { padding: 1.6rem 1.4rem; }
+  .tf-paper-title { font-size: 1.3rem; }
+}
+
+/* ==========================================================================
+   REALM VI: CONTACT US & IIT BOMBAY FOOTER
+   ========================================================================== */
+
+.tf-contact-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.tf-contact-details {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  backdrop-filter: blur(16px);
+}
+
+.tf-contact-details h3 {
+  font-family: var(--font-tf-title);
+  font-size: 1.85rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.tf-contact-details p {
+  font-size: 0.98rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.tf-contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tf-contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 8px;
+  background: rgba(3, 7, 18, 0.5);
+  border: 1px solid var(--tf-border-subtle);
+  transition: all 0.25s ease;
+}
+
+.tf-contact-channel:hover {
+  border-color: var(--tf-gold);
+  transform: translateX(5px);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.tf-channel-icon {
+  font-size: 1.2rem;
+  color: var(--tf-gold-bright);
+}
+
+.tf-channel-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  color: #ffffff;
+}
+
+.tf-channel-text span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--tf-aether-cyan);
+}
+
+/* Contact Form */
+.tf-contact-form {
+  background: var(--tf-surface);
+  border: 1.5px solid var(--tf-card-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  backdrop-filter: blur(16px);
+}
+
+.tf-form-group {
+  margin-bottom: 1.4rem;
+}
+
+.tf-form-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--tf-gold-bright);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.tf-form-input, .tf-form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background: rgba(3, 7, 18, 0.65);
+  border: 1px solid var(--tf-card-border);
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.tf-form-input:focus, .tf-form-textarea:focus {
+  outline: none;
+  border-color: var(--tf-aether-cyan);
+  box-shadow: 0 0 16px var(--tf-aether-glow);
+  background: rgba(3, 7, 18, 0.85);
+}
+
+.tf-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-tf-send {
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 0.95rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--tf-gold) 0%, var(--tf-gold-bright) 100%);
+  color: #030712;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-tf-send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.65);
+  background: linear-gradient(135deg, #ffffff 0%, var(--tf-gold-bright) 100%);
+}
+
+@media (max-width: 1024px) {
+  .tf-contact-wrap { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   OFFICIAL TECHFEST FOOTER
+   ========================================================================== */
+
+.tf-footer {
+  position: relative;
+  z-index: 10;
+  background: #02040a;
+  border-top: 1px solid var(--tf-card-border);
+  padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.tf-footer-content {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.tf-footer-brand h2 {
+  font-family: var(--font-tf-title);
+  font-size: 1.5rem;
+  color: var(--tf-gold-bright);
+  margin-bottom: 0.5rem;
+}
+
+.tf-footer-brand p {
+  font-size: 0.9rem;
+  color: var(--tf-text-secondary);
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+.tf-footer-col h4 {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.tf-footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tf-footer-col a {
+  font-size: 0.88rem;
+  color: var(--tf-text-muted);
+  transition: color 0.25s ease;
+}
+
+.tf-footer-col a:hover {
+  color: var(--tf-gold-bright);
+}
+
+.tf-footer-bottom {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--tf-border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--tf-text-muted);
+}
+
+@media (max-width: 1024px) {
+  .tf-footer-content { grid-template-columns: 1fr; gap: 2rem; }
+  .tf-footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Game Interactive Cursor -->
+  <div id="tf-cursor" aria-hidden="true">
+    <div class="cursor-diamond"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Three.js 3D Volumetric Cloud Skybox -->
+  <canvas id="bg-cloud-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sky Citadel Panoramic Backdrop -->
+  <div class="sky-citadel-backdrop" id="citadel-backdrop" aria-hidden="true"></div>
+  <div class="sky-sunbeams-layer" aria-hidden="true"></div>
+
+  <!-- DYNAMIC SCROLL CLOUD DECKS (Parting Clouds from Left & Right) -->
+  <div class="cloud-deck-wrap" aria-hidden="true">
+    <div class="cloud-bank-left" id="cloud-left"></div>
+    <div class="cloud-bank-right" id="cloud-right"></div>
+  </div>
+
+  <!-- Drifting Mist Ribbon along Horizon -->
+  <div class="drifting-mist-ribbon" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR & TECHFEST NAVIGATION
+       ========================================================================== -->
+  <header class="techfest-topbar" id="techfest-header">
+    <div class="tf-ticker">
+      <div class="tf-ticker-left">
+        <span class="tf-live-dot"></span>
+        <span>GAUTAM RULYAN // OLYMPIAD SCHOLAR & AI RESEARCHER</span>
+      </div>
+      <div class="tf-ticker-right">
+        <span id="hud-altitude">ALTITUDE: 12,450 FT</span>
+      </div>
+    </div>
+
+    <nav class="techfest-nav-wrap" id="main-nav">
+      <a href="#hero" class="tf-brand-logo" aria-label="Gautam Rulyan">
+        <div class="tf-logo-icon">
+          <!-- Stylized Emblem -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" stroke="#f59e0b" stroke-width="3" fill="rgba(245, 158, 11, 0.15)"/>
+            <polygon points="50,20 80,35 80,65 50,80 20,65 20,35" stroke="#00f5ff" stroke-width="2" fill="none"/>
+            <circle cx="50" cy="50" r="12" fill="#fbbf24"/>
+            <circle cx="50" cy="50" r="22" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4"/>
+          </svg>
+        </div>
+        <div class="tf-brand-text">
+          <span class="tf-brand-title">GAUTAM RULYAN</span>
+          <span class="tf-brand-sub">OLYMPIAD SCHOLAR & RESEARCHER</span>
+        </div>
+      </a>
+
+      <ul class="tf-nav-links" id="nav-links">
+        <li class="tf-nav-item"><a href="#hero">OVERVIEW</a></li>
+        <li class="tf-nav-item"><a href="#competitions">PERSONAL ACHIEVEMENTS</a></li>
+        <li class="tf-nav-item"><a href="#results">TEACHING ACHIEVEMENTS</a></li>
+        <li class="tf-nav-item"><a href="#exhibitions">EXHIBITIONS</a></li>
+        <li class="tf-nav-item"><a href="#lectures">LECTURES</a></li>
+        <li class="tf-nav-item"><a href="#contact">CONTACT US</a></li>
+      </ul>
+
+      <div class="tf-nav-actions">
+        <!-- Manual Part Clouds Button -->
+        <button id="btn-part-clouds" class="btn-tf-part-clouds" title="Manually Part the Cloud Banks">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+          </svg>
+          <span>PART CLOUDS</span>
+        </button>
+
+        <!-- Ambient Sound Toggle -->
+        <button id="btn-sound-toggle" class="btn-tf-sound" title="Toggle Celestial Sound">
+          <svg id="sound-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+          </svg>
+        </button>
+
+        <!-- Connect CTA Button -->
+        <a href="#contact" class="btn-tf-cta">
+          <span>CONNECT</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO REALM ("AN AETHERIAL RENAISSANCE")
+       ========================================================================== -->
+  <section class="tf-hero-section" id="hero">
+    <div class="tf-hero-container">
+      <div class="tf-hero-content">
+        <div class="tf-hero-badge">
+          <span class="tf-hero-badge-dot"></span>
+          <span class="tf-hero-badge-text">ACADEMIC & RESEARCH PORTFOLIO • 2026</span>
+        </div>
+
+        <h1 class="tf-hero-title">
+          <span class="glow-gold">GAUTAM RULYAN</span>
+          <span class="glow-cyan">AN AETHERIAL RENAISSANCE</span>
+        </h1>
+
+        <p class="tf-hero-description">
+          National Top 0.05% Mathematics & Science Scholar (SASMO World #8, All India Rank 2). Founder & Director of <strong>Aspire Olympiad</strong> (400+ students mentored). Machine learning researcher advancing AI clinical decision triage and automated geometry theorem proving.
+        </p>
+
+        <div class="tf-hero-actions">
+          <a href="#competitions" class="btn-hero-primary">
+            <span>PERSONAL ACHIEVEMENTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#results" class="btn-hero-ghost">
+            <span>TEACHING RESULTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="tf-stat-strip">
+          <div class="tf-stat-card">
+            <div class="tf-stat-num">WORLD #8</div>
+            <div class="tf-stat-label">SASMO Global</div>
+          </div>
+          <div class="tf-stat-card">
+            <div class="tf-stat-num">AIR 2</div>
+            <div class="tf-stat-label">All India Rank</div>
+          </div>
+          <div class="tf-stat-card">
+            <div class="tf-stat-num">400+</div>
+            <div class="tf-stat-label">Students Trained</div>
+          </div>
+          <div class="tf-stat-card">
+            <div class="tf-stat-num">100%</div>
+            <div class="tf-stat-label">ANMC Gold Final</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tf-hero-3d-wrap">
+        <canvas id="canvas-hero-3d" aria-label="3D Interactive Celestial Astrolabe"></canvas>
+        <div class="tf-3d-rings-indicator">✦ DRAG TO ROTATE 3D CELESTIAL ASTROLABE ✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION CLOUD GATE 1 -->
+  <div class="cloud-transition-gate" aria-hidden="true">
+    <div class="cloud-gate-badge">✦ DESCENDING THROUGH CLOUD STRATA // PERSONAL ACHIEVEMENTS ✦</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 2: OLYMPIAD & COMPETITIONS (PERSONAL ACHIEVEMENTS)
+       ========================================================================== -->
+  <section class="tf-realm-section" id="competitions">
+    <div class="tf-section-header">
+      <div class="tf-section-eyebrow">
+        <span>✦ PERSONAL COMPETITIVE HONORS ✦</span>
+      </div>
+      <h2 class="tf-section-title">OLYMPIAD & <span>COMPETITIONS</span></h2>
+      <div class="tf-category-tag-banner" style="margin-top: -0.4rem; margin-bottom: 1.2rem;">
+        <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.45); border-radius: 20px; color: #fbbf24; font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.15em;">
+          ★ PERSONAL ACHIEVEMENTS OF GAUTAM RULYAN
+        </span>
+      </div>
+      <p class="tf-section-desc">
+        A personal competitive record of distinction across international and national mathematical olympiads, state scientific exhibitions, and advanced research competitions.
+      </p>
+    </div>
+
+    <div class="tf-trophy-grid">
+      <!-- Card 1: SASMO World #8 -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">WORLD RANK #8</span>
+          <span class="tf-trophy-category">INTERNATIONAL</span>
+        </div>
+        <h3 class="tf-trophy-name">SASMO</h3>
+        <p class="tf-trophy-detail">
+          Singapore and Asian Schools Math Olympiad. Ranked <strong>#8 Worldwide</strong> and <strong>All India Rank 2</strong>, earning the Gold Medal in the top 0.05% of tens of thousands of contestants.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">World Top 10</span>
+          <span class="tf-trophy-tag">AIR 2</span>
+          <span class="tf-trophy-tag">Gold Medalist</span>
+        </div>
+      </article>
+
+      <!-- Card 2: AMC 10/12 AIR 72 -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">AIR 72 // HONOR ROLL</span>
+          <span class="tf-trophy-category">MAA GLOBAL</span>
+        </div>
+        <h3 class="tf-trophy-name">American Math Competitions</h3>
+        <p class="tf-trophy-detail">
+          Conducted by the Mathematical Association of America (MAA). Achieved <strong>All India Rank 72</strong>, earning the Distinction Honor Roll certificate and qualification invite for AIME.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">AIME Track</span>
+          <span class="tf-trophy-tag">AIR 72</span>
+          <span class="tf-trophy-tag">MAA Honor Roll</span>
+        </div>
+      </article>
+
+      <!-- Card 3: IOQM & RMO -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">NATIONAL QUALIFIER</span>
+          <span class="tf-trophy-category">TIFR / HBCSE</span>
+        </div>
+        <h3 class="tf-trophy-name">IOQM & RMO</h3>
+        <p class="tf-trophy-detail">
+          Indian Olympiad Qualifier in Mathematics & Regional Mathematical Olympiad. Qualified successive national rounds with distinction, participating in specialized Indian National Math Olympiad training.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">HBCSE</span>
+          <span class="tf-trophy-tag">RMO Scholar</span>
+          <span class="tf-trophy-tag">INMO Track</span>
+        </div>
+      </article>
+
+      <!-- Card 4: Aryabhatta National Mathematics Competition (ANMC) -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">PERFECT 100% SCORE</span>
+          <span class="tf-trophy-category">ALL INDIA FINALS</span>
+        </div>
+        <h3 class="tf-trophy-name">Aryabhatta National Mathematics Competition</h3>
+        <p class="tf-trophy-detail">
+          Attained an absolute <strong>100% flawless score</strong> across all algebraic and geometric problem sets in the national final round, winning the National Gold Medal.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">ANMC Gold Medal</span>
+          <span class="tf-trophy-tag">100% Score</span>
+          <span class="tf-trophy-tag">National Champion</span>
+        </div>
+      </article>
+
+      <!-- Card 5: SOF IMO Gold -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">INTERNATIONAL GOLD</span>
+          <span class="tf-trophy-category">SOF OLYMPIAD</span>
+        </div>
+        <h3 class="tf-trophy-name">SOF International Math Olympiad</h3>
+        <p class="tf-trophy-detail">
+          School Rank 1 and International Gold Medalist. Demonstrated mastery over advanced number theory, arithmetic progressions, and synthetic geometric deduction.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">School Rank 1</span>
+          <span class="tf-trophy-tag">Gold Medal</span>
+          <span class="tf-trophy-tag">Combinatorics</span>
+        </div>
+      </article>
+
+      <!-- Card 6: State Science Exhibition (REACH) -->
+      <article class="tf-trophy-card">
+        <div class="tf-trophy-top">
+          <span class="tf-trophy-rank">1ST PRIZE + BEST EXPLAINER</span>
+          <span class="tf-trophy-category">STATE SCIENCE EXHIBITION</span>
+        </div>
+        <h3 class="tf-trophy-name">State Science Exhibition</h3>
+        <p class="tf-trophy-detail">
+          <strong>1st Prize Winner + Awarded "Best Explainer"</strong> for clarity in articulating complex physical and mathematical systems with the project: <strong>AI MEDICAL TRIAGE ASSISTANT</strong>.
+        </p>
+        <div class="tf-trophy-tags">
+          <span class="tf-trophy-tag">1st Prize Winner</span>
+          <span class="tf-trophy-tag">Best Explainer</span>
+          <span class="tf-trophy-tag">AI Medical Triage Assistant</span>
+          <span class="tf-trophy-tag">State Level</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TRANSITION CLOUD GATE 2 -->
+  <div class="cloud-transition-gate" aria-hidden="true">
+    <div class="cloud-gate-badge">✦ ASCENDING THROUGH STRATOCUMULUS // TEACHING ACHIEVEMENTS ✦</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 3: OLYMPIAD RESULTS (TEACHING ACHIEVEMENTS)
+       ========================================================================== -->
+  <section class="tf-realm-section" id="results">
+    <div class="tf-section-header">
+      <div class="tf-section-eyebrow">
+        <span>✦ MENTORSHIP AUDIT & STUDENT DISTINCTION ✦</span>
+      </div>
+      <h2 class="tf-section-title">OLYMPIAD <span>RESULTS</span></h2>
+      <div class="tf-category-tag-banner" style="margin-top: -0.4rem; margin-bottom: 1.2rem;">
+        <span style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1.2rem; background: rgba(0, 245, 255, 0.12); border: 1px solid rgba(0, 245, 255, 0.45); border-radius: 20px; color: #00f5ff; font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.15em;">
+          ✦ TEACHING ACHIEVEMENTS // ASPIRE OLYMPIAD SCHOLARS
+        </span>
+      </div>
+      <p class="tf-section-desc">
+        Documented clearance rates, national qualifications, and medal conversion metrics achieved by students trained under Gautam Rulyan at Aspire Olympiad.
+      </p>
+    </div>
+
+    <div class="tf-workshop-wrap">
+      <!-- 1. Aspire Global Olympiad Pipeline Audit Card -->
+      <div class="tf-pipeline-audit-card">
+        <div class="tf-audit-top">
+          <span class="tf-audit-title">✦ ASPIRE OLYMPIAD // TEACHING ACHIEVEMENTS</span>
+          <span class="tf-audit-tag">● VERIFIED STUDENT RESULTS</span>
+        </div>
+        <div class="tf-audit-stats">
+          <div class="tf-audit-stat-box">
+            <div class="tf-audit-big-num num-cyan">10</div>
+            <div class="tf-audit-stat-label">AMC QUALIFIERS</div>
+            <div class="tf-audit-stat-sub">American Mathematics Competitions national distinction recipients</div>
+          </div>
+          <div class="tf-audit-stat-box">
+            <div class="tf-audit-big-num num-purple">04</div>
+            <div class="tf-audit-stat-label">AIME ADVANCED</div>
+            <div class="tf-audit-stat-sub">American Invitational Mathematics Examination qualifiers</div>
+          </div>
+          <div class="tf-audit-stat-box">
+            <div class="tf-audit-big-num num-pink">11</div>
+            <div class="tf-audit-stat-label">SASMO WINNERS</div>
+            <div class="tf-audit-stat-sub">Singapore & Asian Schools Math Olympiad international medalists</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Cycle Switcher Tabs -->
+      <div class="tf-cohort-tabs">
+        <button class="btn-cohort-tab active" id="tab-2026">
+          <span>2026 CYCLE</span>
+          <span class="tab-dot-cyan"></span>
+          <span>ACTIVE CAMPAIGN</span>
+        </button>
+        <button class="btn-cohort-tab" id="tab-2025">
+          <span>2025 CYCLE</span>
+          <span class="tab-dot-amber"></span>
+          <span>NATIONAL APEX RECORD</span>
+        </button>
+      </div>
+
+      <!-- 3. 2026 CYCLE Panel (2 Cards) -->
+      <div class="tf-result-grid tf-result-grid-2" id="panel-2026">
+        <!-- Card 1: 7/11 IOQM -> RMO -->
+        <div class="tf-cycle-card">
+          <div class="tf-cycle-meta meta-cyan">2026 CYCLE // REGIONAL CONVERSION</div>
+          <div class="tf-cycle-num" style="color: #00f5ff;">
+            7<span class="num-denom">/11</span>
+          </div>
+          <h3 class="tf-cycle-title">IOQM → RMO ADVANCING</h3>
+          <p class="tf-cycle-desc">
+            7 out of 11 students cleared the high-stakes Indian Olympiad Qualifier in Mathematics (IOQM) and advanced directly to the proof-based Regional Mathematical Olympiad stage.
+          </p>
+          <div class="tf-cycle-bar-wrap">
+            <div class="tf-cycle-bar-track">
+              <div class="tf-cycle-bar-fill fill-cyan" style="width: 63.6%;"></div>
+            </div>
+            <div class="tf-cycle-ratio-label" style="color: #00f5ff;">CONVERSION RATIO: 63.6%</div>
+          </div>
+        </div>
+
+        <!-- Card 2: STG 2 RMO ADVANCED COHORT -->
+        <div class="tf-cycle-card">
+          <div class="tf-cycle-meta meta-purple">2026 CYCLE // PROOF COHORT</div>
+          <div class="tf-cycle-num" style="color: #ec4899;">
+            STG 2
+          </div>
+          <h3 class="tf-cycle-title">RMO ADVANCED COHORT</h3>
+          <p class="tf-cycle-desc">
+            Specialized masterclasses covering Euclidean transformations, Diophantine equations, extremal graph theory, and functional equations with zero formulaic reliance.
+          </p>
+          <div class="tf-cycle-bar-wrap">
+            <div class="tf-cycle-bar-track">
+              <div class="tf-cycle-bar-fill fill-purple" style="width: 100%;"></div>
+            </div>
+            <div class="tf-cycle-ratio-label" style="color: #ec4899;">COHORT READINESS: OPTIMAL</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. 2025 CYCLE Panel (3 Cards) -->
+      <div class="tf-result-grid tf-result-grid-3" id="panel-2025" style="display: none;">
+        <!-- Card 1: 01 INMO National Qualifier -->
+        <div class="tf-cycle-card">
+          <div class="tf-cycle-meta meta-amber">2025 CYCLE // NATIONAL SUMMIT</div>
+          <div class="tf-cycle-num" style="color: #fbbf24;">
+            01
+          </div>
+          <h3 class="tf-cycle-title">INMO NATIONAL QUALIFIER</h3>
+          <p class="tf-cycle-desc">
+            Student cleared the grueling proof examination to qualify directly for the Indian National Mathematical Olympiad (INMO), reaching the pinnacle stage under HBCSE / TIFR.
+          </p>
+          <div class="tf-cycle-bar-wrap">
+            <div class="tf-cycle-bar-track">
+              <div class="tf-cycle-bar-fill fill-amber" style="width: 100%;"></div>
+            </div>
+            <div class="tf-cycle-ratio-label" style="color: #fbbf24;">SUMMIT LEVEL: REACHED</div>
+          </div>
+        </div>
+
+        <!-- Card 2: 3/6 RMO Stage Cleared -->
+        <div class="tf-cycle-card">
+          <div class="tf-cycle-meta meta-cyan">2025 CYCLE // RMO STAGE</div>
+          <div class="tf-cycle-num" style="color: #00f5ff;">
+            3<span class="num-denom">/6</span>
+          </div>
+          <h3 class="tf-cycle-title">RMO STAGE CLEARED</h3>
+          <p class="tf-cycle-desc">
+            50% conversion rate of RMO participants clearing the proof examination and qualifying directly toward national camp consideration.
+          </p>
+          <div class="tf-cycle-bar-wrap">
+            <div class="tf-cycle-bar-track">
+              <div class="tf-cycle-bar-fill fill-cyan" style="width: 50%;"></div>
+            </div>
+            <div class="tf-cycle-ratio-label" style="color: #00f5ff;">CONVERSION RATE: 50.0%</div>
+          </div>
+        </div>
+
+        <!-- Card 3: 6/10 IOQM Qualified Batch -->
+        <div class="tf-cycle-card">
+          <div class="tf-cycle-meta meta-purple">2025 CYCLE // GATEWAY</div>
+          <div class="tf-cycle-num" style="color: #818cf8;">
+            6<span class="num-denom">/10</span>
+          </div>
+          <h3 class="tf-cycle-title">IOQM QUALIFIED BATCH</h3>
+          <p class="tf-cycle-desc">
+            60% clearance rate on the nationwide stage-1 competitive mathematical qualifier, outperforming national averages by over 10x.
+          </p>
+          <div class="tf-cycle-bar-wrap">
+            <div class="tf-cycle-bar-track">
+              <div class="tf-cycle-bar-fill fill-indigo" style="width: 60%;"></div>
+            </div>
+            <div class="tf-cycle-ratio-label" style="color: #818cf8;">STAGE 1 CONVERSION: 60.0%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Lead Card with 3D Synaptic Network -->
+      <div class="tf-workshop-lead-card" style="margin-top: 3.5rem;">
+        <div class="tf-ws-info">
+          <div class="tf-ws-badge">
+            <span>FOUNDER & DIRECTOR // 400+ SCHOLARS MENTORED</span>
+          </div>
+          <h3 class="tf-ws-title">Aspire Olympiad</h3>
+          <p class="tf-ws-desc">
+            An elite nationwide coaching initiative founded and led by Gautam Rulyan. Aspire prepares talented students for international competitions including SASMO, AMC 10/12, IOQM, and RMO with structured problem sets and live theorem dissections.
+          </p>
+          <div class="tf-ws-features">
+            <div class="tf-ws-feature">
+              <div class="tf-ws-feature-dot"></div>
+              <div class="tf-ws-feature-text">
+                <strong>400+ Active Scholars</strong>
+                <span>Trained across two annual cohorts</span>
+              </div>
+            </div>
+            <div class="tf-ws-feature">
+              <div class="tf-ws-feature-dot"></div>
+              <div class="tf-ws-feature-text">
+                <strong>88% Screening Pass Rate</strong>
+                <span>In regional/national Olympiad stages</span>
+              </div>
+            </div>
+            <div class="tf-ws-feature">
+              <div class="tf-ws-feature-dot"></div>
+              <div class="tf-ws-feature-text">
+                <strong>Proof-Based Pedagogy</strong>
+                <span>Extremal principle, polynomials, Euclidean geometry</span>
+              </div>
+            </div>
+            <div class="tf-ws-feature">
+              <div class="tf-ws-feature-dot"></div>
+              <div class="tf-ws-feature-text">
+                <strong>Custom Digital Tooling</strong>
+                <span>Integrated with the Aspire Board platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tf-synaptic-wrap">
+          <canvas id="canvas-synaptic-3d" aria-label="3D Interactive Student Synaptic Web"></canvas>
+          <div class="tf-synaptic-label">✦ 3D SYNAPTIC STUDENT NETWORK: 140 INTERCONNECTED NODES ✦</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION CLOUD GATE 3 -->
+  <div class="cloud-transition-gate" aria-hidden="true">
+    <div class="cloud-gate-badge">✦ BREAKING THROUGH CIRROCUMULUS // EXHIBITIONS & INNOVATIONS ✦</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 4: EXHIBITIONS & INNOVATIONS
+       ========================================================================== -->
+  <section class="tf-realm-section" id="exhibitions">
+    <div class="tf-section-header">
+      <div class="tf-section-eyebrow">
+        <span>✦ TECH EXPO & LIVE DEMOS ✦</span>
+      </div>
+      <h2 class="tf-section-title">EXHIBITIONS & <span>PROJECTS</span></h2>
+      <p class="tf-section-desc">
+        Interactive computational systems, collaborative pedagogical platforms, and clinical machine learning architectures engineered for high performance.
+      </p>
+    </div>
+
+    <div class="tf-exhibition-grid">
+      <!-- Pavilion 1: Aspire Board -->
+      <div class="tf-expo-card">
+        <div class="tf-expo-preview">
+          <canvas id="canvas-aspireboard-3d" aria-label="3D Interactive Aspire Board Model"></canvas>
+          <div class="tf-expo-status-chip">● PRODUCTION READY</div>
+        </div>
+        <div class="tf-expo-body">
+          <span class="tf-expo-tag">COLLABORATIVE MATH WHITEBOARD</span>
+          <h3 class="tf-expo-title">Aspire Board</h3>
+          <p class="tf-expo-desc">
+            A high-performance infinite-canvas collaborative whiteboard engineered specifically for Olympiad mathematics. Features real-time multi-cursor synchronization, instant LaTeX equation rendering, precision geometric drawing tools, and cloud room sessions.
+          </p>
+          <div class="tf-expo-specs">
+            <span class="tf-expo-spec">WebSockets Sync</span>
+            <span class="tf-expo-spec">HTML5 Canvas</span>
+            <span class="tf-expo-spec">LaTeX Engine</span>
+            <span class="tf-expo-spec">Vector Physics</span>
+          </div>
+          <a href="https://aspireboard.gautamrulyan.cloud/" target="_blank" rel="noreferrer" class="btn-expo-launch">
+            <span>LAUNCH ASPIRE BOARD</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pavilion 2: AI Medical Triage -->
+      <div class="tf-expo-card">
+        <div class="tf-expo-preview">
+          <canvas id="canvas-triage-3d" aria-label="3D Interactive AI Triage Model"></canvas>
+          <div class="tf-expo-status-chip">● CLINICAL DEMO</div>
+        </div>
+        <div class="tf-expo-body">
+          <span class="tf-expo-tag">DEEP LEARNING HEALTHCARE</span>
+          <h3 class="tf-expo-title">AI Medical Triage System</h3>
+          <p class="tf-expo-desc">
+            An intelligent emergency department triage platform utilizing clinical NLP and gradient-boosted neural classifiers to evaluate complex patient symptom clusters, calculate Emergency Severity Index (ESI) scores, and flag acute deteriorations in real time.
+          </p>
+          <div class="tf-expo-specs">
+            <span class="tf-expo-spec">Clinical NLP</span>
+            <span class="tf-expo-spec">Transformer Models</span>
+            <span class="tf-expo-spec">Risk Stratification</span>
+            <span class="tf-expo-spec">FastAPI Engine</span>
+          </div>
+          <a href="https://niva.gautamrulyan.cloud/" target="_blank" rel="noreferrer" class="btn-expo-launch">
+            <span>LAUNCH AI TRIAGE SYSTEM</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION CLOUD GATE 4 -->
+  <div class="cloud-transition-gate" aria-hidden="true">
+    <div class="cloud-gate-badge">✦ CIRRUS ALTITUDES // ENTERING LECTURES & RESEARCH ✦</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 5: RESEARCH PUBLICATIONS
+       ========================================================================== -->
+  <section class="tf-realm-section" id="lectures">
+    <div class="tf-section-header">
+      <div class="tf-section-eyebrow">
+        <span>✦ SCHOLARLY ARCHIVES & PUBLICATIONS ✦</span>
+      </div>
+      <h2 class="tf-section-title">RESEARCH <span>PUBLICATIONS</span></h2>
+      <p class="tf-section-desc">
+        Peer-reviewed journal papers and multimodal computational intelligence research authored by Gautam Rulyan.
+      </p>
+    </div>
+
+    <div class="tf-research-list">
+      <!-- Paper 01 -->
+      <article class="tf-paper-card">
+        <div class="tf-paper-top-tags">
+          <span class="tag-gold">PAPER 01 // LEAD AUTHOR</span>
+          <span class="tag-purple">YEAR: 2026</span>
+          <span class="tag-cyan">MULTIMODAL AI</span>
+        </div>
+        <h3 class="tf-paper-title">A Multimodal AI-Based Medical Triage System Using Late Fusion</h3>
+        <p class="tf-paper-desc">
+          Harmonizes heterogeneous patient modalities (unstructured clinical text, numerical vitals, and radiographic imaging) via an entropy-gated late fusion architecture with conflict-aware severity loss penalties.
+        </p>
+        <div class="tf-paper-bottom">
+          <span class="tf-paper-action action-amber">PEER REVIEW IN PROGRESS ⧗</span>
+          <span class="tf-paper-doc-id">ID: RES-2026-MEDTRIAGE</span>
+        </div>
+      </article>
+
+      <!-- Paper 02 -->
+      <article class="tf-paper-card">
+        <div class="tf-paper-top-tags">
+          <span class="tag-cyan">PAPER 02 // PUBLISHED</span>
+          <span class="tag-purple">YEAR: 2025</span>
+          <span class="tag-gold">IJRASET JOURNAL</span>
+        </div>
+        <h3 class="tf-paper-title">The Convergence of AI & Visual Art: Tools, Ethics and the Future</h3>
+        <p class="tf-paper-desc">
+          Critical evaluation of generative diffusion models, training provenance, aesthetic convergence, and algorithmic governance frameworks balancing human artistic sovereignty with generative acceleration.
+        </p>
+        <div class="tf-paper-bottom">
+          <a href="#" class="tf-paper-action action-cyan" onclick="alert('Accessing IJRASET Journal Volume 13 publication by Gautam Rulyan.'); return false;">
+            <span>ACCESS FULL PAPER ↗</span>
+          </a>
+          <span class="tf-paper-doc-id">JOURNAL: IJRASET v13</span>
+        </div>
+      </article>
+
+      <!-- Paper 03 -->
+      <article class="tf-paper-card">
+        <div class="tf-paper-top-tags">
+          <span class="tag-pink">PAPER 03 // PUBLISHED</span>
+          <span class="tag-purple">YEAR: 2025</span>
+          <span class="tag-cyan">JETIR JOURNAL</span>
+        </div>
+        <h3 class="tf-paper-title">Smartphone-Based Real-Time Cyclist Safety via YOLOv5n</h3>
+        <p class="tf-paper-desc">
+          Engineered ultra-lightweight mobile object detection architecture achieving 42+ FPS on resource-constrained consumer smartphones for low-latency vehicle proximity collision alerts.
+        </p>
+        <div class="tf-paper-bottom">
+          <a href="#" class="tf-paper-action action-cyan" onclick="alert('Downloading JETIR document JETIR2507491 PDF.'); return false;">
+            <span>DOWNLOAD JETIR PDF ↗</span>
+          </a>
+          <span class="tf-paper-doc-id">DOC: JETIR2507491</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TRANSITION CLOUD GATE 5 -->
+  <div class="cloud-transition-gate" aria-hidden="true">
+    <div class="cloud-gate-badge">✦ FINAL APPROACH // BEACON OF TRANSMISSION ✦</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 6: CONTACT US
+       ========================================================================== -->
+  <section class="tf-realm-section" id="contact">
+    <div class="tf-section-header">
+      <div class="tf-section-eyebrow">
+        <span>✦ COLLABORATIONS & INQUIRIES ✦</span>
+      </div>
+      <h2 class="tf-section-title">CONNECT WITH <span>GAUTAM</span></h2>
+      <p class="tf-section-desc">
+        Open for collaborations in Olympiad coaching, mathematical research, artificial intelligence engineering, and academic partnerships.
+      </p>
+    </div>
+
+    <div class="tf-contact-wrap">
+      <div class="tf-contact-details">
+        <h3>Direct Channels</h3>
+        <p>
+          Reach out directly for Olympiad curriculum consulting, student enrollment in Aspire, algorithmic research, or technical collaboration.
+        </p>
+
+        <div class="tf-contact-channels">
+          <a href="mailto:gautamrulyan16@gmail.com" class="tf-contact-channel">
+            <div class="tf-channel-icon">✉</div>
+            <div class="tf-channel-text">
+              <strong>Direct Email</strong>
+              <span>gautamrulyan16@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/gautamrulyan" target="_blank" rel="noreferrer" class="tf-contact-channel">
+            <div class="tf-channel-icon">⚡</div>
+            <div class="tf-channel-text">
+              <strong>GitHub Repository</strong>
+              <span>github.com/gautamrulyan</span>
+            </div>
+          </a>
+
+          <a href="https://aspireboard.gautamrulyan.cloud/" target="_blank" rel="noreferrer" class="tf-contact-channel">
+            <div class="tf-channel-icon">◈</div>
+            <div class="tf-channel-text">
+              <strong>Aspire Board Platform</strong>
+              <span>aspireboard.gautamrulyan.cloud</span>
+            </div>
+          </a>
+
+          <a href="https://niva.gautamrulyan.cloud/" target="_blank" rel="noreferrer" class="tf-contact-channel">
+            <div class="tf-channel-icon">✦</div>
+            <div class="tf-channel-text">
+              <strong>AI Clinical Decision Triage</strong>
+              <span>niva.gautamrulyan.cloud</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="tf-contact-form" id="contact-form" action="https://formsubmit.co/gautamrulyan1978@gmail.com" method="POST">
+        <!-- FormSubmit Backend Routing & Configurations -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" id="form-submit-subject" value="[Portfolio Inquiry] Transmission Received">
+
+        <div class="tf-form-group">
+          <label class="tf-form-label" for="contact-name">Your Full Name</label>
+          <input type="text" id="contact-name" name="name" class="tf-form-input" placeholder="e.g. Dr. Aryan Sharma" required autocomplete="name">
+        </div>
+
+        <div class="tf-form-group">
+          <label class="tf-form-label" for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" name="email" class="tf-form-input" placeholder="e.g. aryan@institution.edu" required autocomplete="email">
+        </div>
+
+        <div class="tf-form-group">
+          <label class="tf-form-label" for="contact-subject">Topic / Domain</label>
+          <input type="text" id="contact-subject" name="topic" class="tf-form-input" placeholder="e.g. Olympiad Mentorship / Research Collaboration">
+        </div>
+
+        <div class="tf-form-group">
+          <label class="tf-form-label" for="contact-msg">Message Transmission</label>
+          <textarea id="contact-msg" name="message" class="tf-form-textarea" placeholder="Detail your inquiry or collaborative proposition..." required rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-tf-send" id="btn-submit-contact">
+          <span id="btn-submit-text">DISPATCH TRANSMISSION</span>
+        </button>
+
+        <div id="contact-feedback" style="display:none; margin-top:1.25rem; padding:1.2rem; border-radius:10px; background:rgba(16, 185, 129, 0.12); border:1px solid #10b981; color:#f8fafc; font-family:var(--font-mono); font-size:0.85rem; line-height:1.6;"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OFFICIAL TECHFEST FOOTER
+       ========================================================================== -->
+  <footer class="tf-footer">
+    <div class="tf-footer-content">
+      <div class="tf-footer-brand">
+        <h2>GAUTAM RULYAN</h2>
+        <p>
+          Dedicated to fostering mathematical rigor, algorithmic excellence, and scientific research across the globe.
+        </p>
+      </div>
+
+      <div class="tf-footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Overview</a></li>
+          <li><a href="#competitions">Personal Achievements</a></li>
+          <li><a href="#results">Teaching Achievements</a></li>
+          <li><a href="#exhibitions">Exhibitions</a></li>
+          <li><a href="#lectures">Lectures</a></li>
+        </ul>
+      </div>
+
+      <div class="tf-footer-col">
+        <h4>Innovations</h4>
+        <ul>
+          <li><a href="https://aspireboard.gautamrulyan.cloud/" target="_blank" rel="noreferrer">Aspire Board</a></li>
+          <li><a href="https://niva.gautamrulyan.cloud/" target="_blank" rel="noreferrer">AI Medical Triage</a></li>
+          <li><a href="#results">Aspire Olympiad</a></li>
+          <li><a href="#lectures">Multimodal Medical Triage</a></li>
+        </ul>
+      </div>
+
+      <div class="tf-footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:gautamrulyan16@gmail.com">gautamrulyan16@gmail.com</a></li>
+          <li><a href="https://github.com/gautamrulyan" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="#contact">Send Transmission</a></li>
+          <li><a href="#hero">Back to Summit</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tf-footer-bottom">
+      <span>© 2026 GAUTAM RULYAN • ALL RIGHTS RESERVED</span>
+      <span>AN AETHERIAL RENAISSANCE</span>
+      <span>POWERED BY THREE.JS WEBGL & SCROLL CLOUD PARALLAX</span>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       TECHFEST JAVASCRIPT & CLOUD SCROLL ANIMATION ENGINE
+       ========================================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    // -------------------------------------------------------------------------
+    // 1. SCROLL CLOUD PARTING & ALTITUDE PARALLAX ENGINE ("THE CLOUD THING")
+    // -------------------------------------------------------------------------
+    const cloudLeft = document.getElementById('cloud-left');
+    const cloudRight = document.getElementById('cloud-right');
+    const citadelBackdrop = document.getElementById('citadel-backdrop');
+    const altitudeEl = document.getElementById('hud-altitude');
+    const mainNav = document.getElementById('main-nav');
+
+    function updateScrollClouds() {
+      const scrollY = window.scrollY;
+      const maxScroll = Math.max(document.body.scrollHeight - window.innerHeight, 1);
+      const progress = Math.min(Math.max(scrollY / maxScroll, 0), 1);
+
+      // Part clouds outward horizontally as user scrolls
+      // Wave oscillation creates a breathing sensation through cloud banks
+      const cycle = (scrollY % 900) / 900;
+      const partDistance = Math.min(scrollY * 0.42, 400) + Math.sin(cycle * Math.PI) * 40;
+
+      if (cloudLeft) {
+        cloudLeft.style.transform = `translateX(-${partDistance}px) scale(${1 + progress * 0.2})`;
+      }
+      if (cloudRight) {
+        cloudRight.style.transform = `translateX(${partDistance}px) scaleX(-1) scaleY(${1 + progress * 0.2})`;
+      }
+
+      // Parallax movement of sky citadel
+      if (citadelBackdrop) {
+        citadelBackdrop.style.transform = `translateY(${scrollY * 0.16}px) scale(${1 + progress * 0.06})`;
+      }
+
+      // Dynamic Altitude readout in HUD
+      if (altitudeEl) {
+        const altitudeFeet = Math.max(12450 - Math.floor(scrollY * 1.6), 1200);
+        altitudeEl.textContent = `ALTITUDE: ${altitudeFeet.toLocaleString()} FT`;
+      }
+
+      // Scrolled state for navbar
+      if (mainNav) {
+        if (scrollY > 40) {
+          mainNav.classList.add('scrolled');
+        } else {
+          mainNav.classList.remove('scrolled');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollClouds, { passive: true });
+    updateScrollClouds();
+
+    // Manual "Part Clouds" Action
+    const partCloudsBtn = document.getElementById('btn-part-clouds');
+    let isManuallyParted = false;
+    if (partCloudsBtn) {
+      partCloudsBtn.addEventListener('click', () => {
+        isManuallyParted = !isManuallyParted;
+        if (isManuallyParted) {
+          if (cloudLeft) cloudLeft.style.transform = 'translateX(-650px)';
+          if (cloudRight) cloudRight.style.transform = 'translateX(650px) scaleX(-1)';
+          playGameSound(720, 'sine', 0.4);
+        } else {
+          updateScrollClouds();
+          playGameSound(540, 'sine', 0.3);
+        }
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 2. CELESTIAL WEB AUDIO SYNTHESIZER
+    // -------------------------------------------------------------------------
+    let audioCtx = null;
+    let isSoundOn = false;
+    let masterGain = null;
+
+    function initAudio() {
+      if (audioCtx) return;
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      audioCtx = new AudioContext();
+
+      masterGain = audioCtx.createGain();
+      masterGain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+      masterGain.connect(audioCtx.destination);
+
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(320, audioCtx.currentTime);
+      filter.connect(masterGain);
+
+      // Low celestial wind drone
+      const drone1 = audioCtx.createOscillator();
+      drone1.type = 'sine';
+      drone1.frequency.setValueAtTime(144, audioCtx.currentTime);
+      drone1.connect(filter);
+      drone1.start();
+
+      const drone2 = audioCtx.createOscillator();
+      drone2.type = 'sine';
+      drone2.frequency.setValueAtTime(216, audioCtx.currentTime);
+      drone2.connect(filter);
+      drone2.start();
+    }
+
+    function playGameSound(freq, type = 'sine', duration = 0.3) {
+      if (!isSoundOn || !audioCtx) return;
+      try {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(masterGain);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    const soundToggleBtn = document.getElementById('btn-sound-toggle');
+    if (soundToggleBtn) {
+      soundToggleBtn.addEventListener('click', () => {
+        if (!audioCtx) initAudio();
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        isSoundOn = !isSoundOn;
+        if (isSoundOn) {
+          soundToggleBtn.classList.add('active');
+          if (masterGain) masterGain.gain.setTargetAtTime(0.1, audioCtx.currentTime, 0.1);
+          playGameSound(640, 'sine', 0.4);
+        } else {
+          soundToggleBtn.classList.remove('active');
+          if (masterGain) masterGain.gain.setTargetAtTime(0, audioCtx.currentTime, 0.1);
+        }
+      });
+    }
+
+    // Interactive button chimes
+    const interactiveEls = document.querySelectorAll('a, button, .tf-trophy-card, .tf-expo-card, .tf-paper-card');
+    const chimes = [440, 520, 660, 780, 880];
+    interactiveEls.forEach((el, i) => {
+      el.addEventListener('mouseenter', () => {
+        playGameSound(chimes[i % chimes.length], 'sine', 0.2);
+      });
+    });
+
+    // -------------------------------------------------------------------------
+    // 3. RETICLE GAME CURSOR
+    // -------------------------------------------------------------------------
+    const cursor = document.getElementById('tf-cursor');
+    let mX = window.innerWidth / 2, mY = window.innerHeight / 2;
+    let rX = mX, rY = mY;
+
+    window.addEventListener('mousemove', (e) => {
+      mX = e.clientX;
+      mY = e.clientY;
+    });
+
+    function updateCursor() {
+      rX += (mX - rX) * 0.22;
+      rY += (mY - rY) * 0.22;
+      if (cursor) {
+        cursor.style.transform = `translate(${rX}px, ${rY}px)`;
+      }
+      requestAnimationFrame(updateCursor);
+    }
+    requestAnimationFrame(updateCursor);
+
+    interactiveEls.forEach((el) => {
+      el.addEventListener('mouseenter', () => cursor && cursor.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursor && cursor.classList.remove('hovering'));
+    });
+
+    // -------------------------------------------------------------------------
+    // 4. MOBILE NAVIGATION
+    // -------------------------------------------------------------------------
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    if (mobileBtn && navLinks) {
+      mobileBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. COHORT TAB SWITCHER
+    // -------------------------------------------------------------------------
+    const tab2026 = document.getElementById('tab-2026');
+    const tab2025 = document.getElementById('tab-2025');
+    const panel2026 = document.getElementById('panel-2026');
+    const panel2025 = document.getElementById('panel-2025');
+
+    if (tab2026 && tab2025 && panel2026 && panel2025) {
+      tab2026.addEventListener('click', () => {
+        tab2026.classList.add('active');
+        tab2025.classList.remove('active');
+        panel2026.style.display = 'grid';
+        panel2025.style.display = 'none';
+        playGameSound(520, 'sine', 0.2);
+      });
+      tab2025.addEventListener('click', () => {
+        tab2025.classList.add('active');
+        tab2026.classList.remove('active');
+        panel2025.style.display = 'grid';
+        panel2026.style.display = 'none';
+        playGameSound(660, 'sine', 0.2);
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 6. THREE.JS 3D WEBGL GRAPHICS ENGINES
+    // -------------------------------------------------------------------------
+    if (typeof THREE === 'undefined') {
+      console.warn('Three.js library not loaded. 2D fallback active.');
+      return;
+    }
+
+    // A. 3D VOLUMETRIC CLOUD SKYBOX (Flying through clouds on scroll)
+    const cloudBgCanvas = document.getElementById('bg-cloud-canvas');
+    if (cloudBgCanvas) {
+      const cScene = new THREE.Scene();
+      const cCamera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 3000);
+      cCamera.position.z = 1000;
+
+      const cRenderer = new THREE.WebGLRenderer({ canvas: cloudBgCanvas, alpha: true, antialias: false });
+      cRenderer.setSize(window.innerWidth, window.innerHeight);
+      cRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+
+      // Generate procedural soft cloud puff texture
+      const cCanvas = document.createElement('canvas');
+      cCanvas.width = 128;
+      cCanvas.height = 128;
+      const cCtx = cCanvas.getContext('2d');
+      const grad = cCtx.createRadialGradient(64, 64, 0, 64, 64, 64);
+      grad.addColorStop(0, 'rgba(254, 243, 199, 0.75)');
+      grad.addColorStop(0.35, 'rgba(245, 158, 11, 0.25)');
+      grad.addColorStop(0.75, 'rgba(0, 245, 255, 0.08)');
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      cCtx.fillStyle = grad;
+      cCtx.fillRect(0, 0, 128, 128);
+
+      const cloudTexture = new THREE.CanvasTexture(cCanvas);
+
+      // Cloud particle group
+      const cloudGroup = new THREE.Group();
+      cScene.add(cloudGroup);
+
+      const cloudPuffCount = 70;
+      const cloudGeo = new THREE.PlaneGeometry(380, 380);
+      const cloudMat = new THREE.MeshBasicMaterial({
+        map: cloudTexture,
+        transparent: true,
+        opacity: 0.32,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending
+      });
+
+      for (let i = 0; i < cloudPuffCount; i++) {
+        const mesh = new THREE.Mesh(cloudGeo, cloudMat);
+        mesh.position.set(
+          (Math.random() - 0.5) * 2400,
+          (Math.random() - 0.5) * 1800,
+          (Math.random() - 0.5) * 1400
+        );
+        mesh.rotation.z = Math.random() * Math.PI * 2;
+        mesh.scale.setScalar(1 + Math.random() * 2);
+        cloudGroup.add(mesh);
+      }
+
+      window.addEventListener('resize', () => {
+        cCamera.aspect = window.innerWidth / window.innerHeight;
+        cCamera.updateProjectionMatrix();
+        cRenderer.setSize(window.innerWidth, window.innerHeight);
+      });
+
+      function renderCloudSky() {
+        // Slow majestic drift
+        cloudGroup.rotation.y += 0.0003;
+        cloudGroup.position.x += 0.12;
+        if (cloudGroup.position.x > 300) cloudGroup.position.x = -300;
+
+        // Camera flight coupled to window scroll (flying down through cloud layers)
+        cCamera.position.y = -window.scrollY * 0.35;
+
+        cRenderer.render(cScene, cCamera);
+        requestAnimationFrame(renderCloudSky);
+      }
+      requestAnimationFrame(renderCloudSky);
+    }
+
+    // B. HERO 3D CELESTIAL ASTROLABE
+    const heroCanvas = document.getElementById('canvas-hero-3d');
+    if (heroCanvas) {
+      const hScene = new THREE.Scene();
+      const hCamera = new THREE.PerspectiveCamera(45, heroCanvas.clientWidth / heroCanvas.clientHeight, 0.1, 1000);
+      hCamera.position.set(0, 0, 16);
+
+      const hRenderer = new THREE.WebGLRenderer({ canvas: heroCanvas, alpha: true, antialias: true });
+      hRenderer.setSize(heroCanvas.clientWidth, heroCanvas.clientHeight);
+      hRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      // Lighting
+      const ambLight = new THREE.AmbientLight(0xffffff, 0.6);
+      hScene.add(ambLight);
+
+      const goldLight = new THREE.PointLight(0xfbbf24, 3, 50);
+      goldLight.position.set(10, 12, 12);
+      hScene.add(goldLight);
+
+      const cyanLight = new THREE.PointLight(0x00f5ff, 2.5, 50);
+      cyanLight.position.set(-10, -12, -12);
+      hScene.add(cyanLight);
+
+      // Astrolabe Group
+      const astrolabeGroup = new THREE.Group();
+      hScene.add(astrolabeGroup);
+
+      // Materials
+      const goldRingMat = new THREE.MeshStandardMaterial({
+        color: 0xf59e0b,
+        metalness: 0.85,
+        roughness: 0.2,
+        emissive: 0x78350f,
+        emissiveIntensity: 0.3
+      });
+
+      const cyanRingMat = new THREE.MeshStandardMaterial({
+        color: 0x00f5ff,
+        metalness: 0.8,
+        roughness: 0.2,
+        emissive: 0x0891b2,
+        emissiveIntensity: 0.4
+      });
+
+      // Rings
+      const ring1 = new THREE.Mesh(new THREE.TorusGeometry(5.2, 0.12, 16, 100), goldRingMat);
+      const ring2 = new THREE.Mesh(new THREE.TorusGeometry(4.2, 0.1, 16, 100), cyanRingMat);
+      const ring3 = new THREE.Mesh(new THREE.TorusGeometry(3.2, 0.09, 16, 100), goldRingMat);
+      ring2.rotation.x = Math.PI / 3;
+      ring3.rotation.y = Math.PI / 4;
+      astrolabeGroup.add(ring1, ring2, ring3);
+
+      // Glowing Center Core (Icosahedron)
+      const coreGeo = new THREE.IcosahedronGeometry(1.6, 1);
+      const coreMat = new THREE.MeshStandardMaterial({
+        color: 0xfbbf24,
+        emissive: 0xf59e0b,
+        emissiveIntensity: 0.8,
+        wireframe: true
+      });
+      const core = new THREE.Mesh(coreGeo, coreMat);
+      astrolabeGroup.add(core);
+
+      // Orbiting Sparkles
+      const particleCount = 60;
+      const partGeo = new THREE.BufferGeometry();
+      const posArray = new Float32Array(particleCount * 3);
+      for (let i = 0; i < particleCount * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * 12;
+      }
+      partGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+      const partMat = new THREE.PointsMaterial({ size: 0.12, color: 0x00f5ff });
+      const particles = new THREE.Points(partGeo, partMat);
+      astrolabeGroup.add(particles);
+
+      // Mouse drag rotation
+      let isDragging = false;
+      let prevMouseX = 0, prevMouseY = 0;
+
+      heroCanvas.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        prevMouseX = e.clientX;
+        prevMouseY = e.clientY;
+      });
+
+      window.addEventListener('mouseup', () => isDragging = false);
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const deltaX = e.clientX - prevMouseX;
+        const deltaY = e.clientY - prevMouseY;
+        astrolabeGroup.rotation.y += deltaX * 0.008;
+        astrolabeGroup.rotation.x += deltaY * 0.008;
+        prevMouseX = e.clientX;
+        prevMouseY = e.clientY;
+      });
+
+      function renderAstrolabe() {
+        if (!isDragging) {
+          astrolabeGroup.rotation.y += 0.006;
+          astrolabeGroup.rotation.x += 0.003;
+        }
+        ring2.rotation.z += 0.008;
+        ring3.rotation.x -= 0.007;
+        core.rotation.y -= 0.012;
+        particles.rotation.y += 0.002;
+
+        hRenderer.render(hScene, hCamera);
+        requestAnimationFrame(renderAstrolabe);
+      }
+      requestAnimationFrame(renderAstrolabe);
+    }
+
+    // C. 3D SYNAPTIC STUDENT NETWORK (Workshops section)
+    const synapticCanvas = document.getElementById('canvas-synaptic-3d');
+    if (synapticCanvas) {
+      const sScene = new THREE.Scene();
+      const sCamera = new THREE.PerspectiveCamera(50, synapticCanvas.clientWidth / synapticCanvas.clientHeight, 0.1, 1000);
+      sCamera.position.z = 24;
+
+      const sRenderer = new THREE.WebGLRenderer({ canvas: synapticCanvas, alpha: true, antialias: true });
+      sRenderer.setSize(synapticCanvas.clientWidth, synapticCanvas.clientHeight);
+      sRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      const nodeGroup = new THREE.Group();
+      sScene.add(nodeGroup);
+
+      const nodeCount = 55;
+      const nodes = [];
+      const nodeGeo = new THREE.SphereGeometry(0.24, 12, 12);
+      const goldNodeMat = new THREE.MeshBasicMaterial({ color: 0xfbbf24 });
+      const cyanNodeMat = new THREE.MeshBasicMaterial({ color: 0x00f5ff });
+
+      for (let i = 0; i < nodeCount; i++) {
+        const mat = i % 2 === 0 ? goldNodeMat : cyanNodeMat;
+        const sphere = new THREE.Mesh(nodeGeo, mat);
+        sphere.position.set(
+          (Math.random() - 0.5) * 22,
+          (Math.random() - 0.5) * 16,
+          (Math.random() - 0.5) * 14
+        );
+        nodeGroup.add(sphere);
+        nodes.push(sphere);
+      }
+
+      // Connecting Synaptic Lines
+      const lineMat = new THREE.LineBasicMaterial({ color: 0x00f5ff, transparent: true, opacity: 0.22 });
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dist = nodes[i].position.distanceTo(nodes[j].position);
+          if (dist < 6.5) {
+            const lineGeo = new THREE.BufferGeometry().setFromPoints([nodes[i].position, nodes[j].position]);
+            const line = new THREE.Line(lineGeo, lineMat);
+            nodeGroup.add(line);
+          }
+        }
+      }
+
+      function renderSynapse() {
+        nodeGroup.rotation.y += 0.004;
+        nodeGroup.rotation.x += 0.002;
+        sRenderer.render(sScene, sCamera);
+        requestAnimationFrame(renderSynapse);
+      }
+      requestAnimationFrame(renderSynapse);
+    }
+
+    // D. 3D INTERACTIVE PROJECT PREVIEWERS (Aspire Board & AI Triage)
+    function initProjectPreview(canvasId, shapeType, primaryColor) {
+      const pCanvas = document.getElementById(canvasId);
+      if (!pCanvas) return;
+
+      const pScene = new THREE.Scene();
+      const pCamera = new THREE.PerspectiveCamera(45, pCanvas.clientWidth / pCanvas.clientHeight, 0.1, 100);
+      pCamera.position.z = 8;
+
+      const pRenderer = new THREE.WebGLRenderer({ canvas: pCanvas, alpha: true, antialias: true });
+      pRenderer.setSize(pCanvas.clientWidth, pCanvas.clientHeight);
+      pRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+      const amb = new THREE.AmbientLight(0xffffff, 0.8);
+      pScene.add(amb);
+
+      const ptLight = new THREE.PointLight(primaryColor, 2, 20);
+      ptLight.position.set(5, 5, 5);
+      pScene.add(ptLight);
+
+      let geo;
+      if (shapeType === 'board') {
+        geo = new THREE.BoxGeometry(4.2, 2.6, 0.3);
+      } else {
+        geo = new THREE.OctahedronGeometry(2.2, 0);
+      }
+
+      const mat = new THREE.MeshStandardMaterial({
+        color: primaryColor,
+        wireframe: true,
+        emissive: primaryColor,
+        emissiveIntensity: 0.4
+      });
+
+      const mesh = new THREE.Mesh(geo, mat);
+      pScene.add(mesh);
+
+      function renderP() {
+        mesh.rotation.y += 0.008;
+        mesh.rotation.x += 0.005;
+        pRenderer.render(pScene, pCamera);
+        requestAnimationFrame(renderP);
+      }
+      requestAnimationFrame(renderP);
+    }
+
+    initProjectPreview('canvas-aspireboard-3d', 'board', 0xf59e0b);
+    initProjectPreview('canvas-triage-3d', 'triage', 0x00f5ff);
+
+    // E. CONTACT FORM TRANSMISSION DISPATCHER (Delivery to gautamrulyan1978@gmail.com)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const submitBtn = document.getElementById('btn-submit-contact');
+        const submitText = document.getElementById('btn-submit-text');
+        const feedback = document.getElementById('contact-feedback');
+
+        const name = (document.getElementById('contact-name')?.value || '').trim();
+        const email = (document.getElementById('contact-email')?.value || '').trim();
+        const topic = (document.getElementById('contact-subject')?.value || '').trim() || 'General Inquiry';
+        const msg = (document.getElementById('contact-msg')?.value || '').trim();
+
+        if (submitBtn) submitBtn.disabled = true;
+        if (submitText) submitText.textContent = 'DISPATCHING TRANSMISSION...';
+        if (feedback) feedback.style.display = 'none';
+
+        const targetEmail = "gautamrulyan1978@gmail.com";
+        const emailSubject = `[Portfolio Transmission] ${topic} — from ${name}`;
+        const emailBody = `From: ${name} (${email})\nTopic: ${topic}\n\nMessage:\n${msg}`;
+        
+        const gmailUri = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoUri = `mailto:${targetEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+        // Fast AbortController to never hang on dead third-party servers
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3500);
+
+        fetch("https://formsubmit.co/ajax/" + targetEmail, {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            _subject: emailSubject,
+            message: msg,
+            _replyto: email
+          }),
+          signal: controller.signal
+        })
+        .then(function(res) {
+          clearTimeout(timeoutId);
+          if (!res.ok) throw new Error("Server status " + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          if (feedback) {
+            feedback.style.display = 'block';
+            feedback.style.background = 'rgba(16, 185, 129, 0.14)';
+            feedback.style.borderColor = '#10b981';
+            feedback.innerHTML = `
+              <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:#10b981; font-size:1.4rem; line-height:1;">✦</span>
+                <div>
+                  <strong style="color:#10b981; font-size:0.95rem; display:block; margin-bottom:0.25rem;">Transmission Successfully Dispatched!</strong>
+                  <span>Thank you, <strong>${name || 'Scholar'}</strong>. Your message has been sent directly to Gautam's inbox. You will receive a response at <strong>${email}</strong>.</span>
+                </div>
+              </div>
+            `;
+          }
+          contactForm.reset();
+        })
+        .catch(function(err) {
+          clearTimeout(timeoutId);
+          // If server fails or times out, immediately provide instant 1-click delivery
+          if (feedback) {
+            feedback.style.display = 'block';
+            feedback.style.background = 'rgba(7, 15, 38, 0.95)';
+            feedback.style.borderColor = '#fbbf24';
+            feedback.innerHTML = `
+              <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:#fbbf24; font-size:1.35rem; line-height:1;">⚡</span>
+                <div>
+                  <strong style="color:#fbbf24; font-size:0.95rem; display:block; margin-bottom:0.25rem;">Transmission Ready to Send!</strong>
+                  <span style="display:block; margin-bottom:0.75rem; color:#cbd5e1;">Your message has been formatted for <strong>Gautam</strong>. Choose your preferred dispatch channel:</span>
+                  <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+                    <a href="${gmailUri}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.45rem 1rem; background:#ea4335; border:1px solid #ff7b6b; border-radius:6px; color:#ffffff; text-decoration:none; font-weight:700; font-size:0.8rem; box-shadow: 0 0 12px rgba(234,67,53,0.35);">
+                      ✉ Open in Gmail (1-Click Send)
+                    </a>
+                    <a href="${mailtoUri}" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.45rem 1rem; background:rgba(245,158,11,0.18); border:1px solid #fbbf24; border-radius:6px; color:#fbbf24; text-decoration:none; font-weight:700; font-size:0.8rem;">
+                      ◈ Open Default Mail App
+                    </a>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+
+          // Auto-trigger default mail client
+          window.location.href = mailtoUri;
+        })
+        .finally(function() {
+          if (submitBtn) submitBtn.disabled = false;
+          if (submitText) submitText.textContent = 'DISPATCH TRANSMISSION';
+        });
+      });
+    }
+
+  })();
+  </script>
+</body>
+</html>
